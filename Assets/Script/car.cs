@@ -13,6 +13,6 @@ public class car : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (Input.GetAxis("Horizontal") * Time.deltaTime, 0f, moveSpeed*Input.GetAxis("Vertical")*Time.deltaTime);
+		transform.Translate (moveSpeed*Input.GetAxis("Horizontal") * Time.deltaTime, 0f, moveSpeed*Input.GetAxis("Vertical")*Time.deltaTime);
 	}
 }
